@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Vite App</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css" />
+   </head>
+   <body>
+      <div id="app">
+         <header class="p-3 px-5 border">
+            <div class="topbar mb-5 text-sm text-gray-500 flex items-center justify-between">
+               <div class="center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                     <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                  </svg>
+                  <span>+92 3698745698</span>
+               </div>
+               <div class="center gap-2">
+                  <select name="display_price" id="display_price" class="text-sm border-none">
+                     <option value="usd">USD</option>
+                  </select>
+                  <select name="site_lang" id="site_lang" class="text-sm border-none">
+                     <option value="usd">ENG</option>
+                  </select>
+                  <div class="center">
+                     <a href="/signup" class="hover:text-blue-500 transition">Signup</a>
+                     <span>/</span>
+                     <a href="/signup" class="hover:text-blue-500 transition">Login</a>
+                  </div>
+               </div>
+            </div>
+            <div class="flex items-center justify-between mb-5">
+               <div class="center gap-2">
+                  <img src="/vite.svg" />
+                  <span class="text-2xl font-semibold">Vite</span>
+               </div>
+               <div class="center flex-grow max-w-sm">
+                  <input type="search" name="top_search" id="top_search" class="search w-full p-1.5 border border-gray-400 rounded-3xl ring-0 focus:border-blue-500 focus:ring-2 focus:ring-blue-300 transition" placeholder="Search Product" />
+               </div>
+               <button class="w-10 md:hidden center flex-col gap-1">
+                  <span class="w-full p-1 inline-block bg-gray-900 rounded"></span>
+                  <span class="w-full p-1 inline-block bg-gray-900 rounded"></span>
+                  <span class="w-full p-1 inline-block bg-gray-900 rounded"></span>
+               </button>
+               <div class="text-xl center gap-3">
+                  <div class="cursor-pointer header-cta">
+                     <i class="bi bi-shuffle"></i>
+                     <span class="noti_label w-4 h-4 inline-block rounded-full text-white text-[10px] leading-normal text-center bg-blue-500 -translate-y-3 -translate-x-4 transition">1</span><br />
+                  </div>
+                  <div class="cursor-pointer header-cta">
+                     <i class="bi bi-heart"></i>
+                     <span class="noti_label w-4 h-4 inline-block rounded-full text-white text-[10px] leading-normal text-center bg-blue-500 -translate-y-3 -translate-x-4 transition">1</span>
+                  </div>
+                  <div class="cursor-pointer header-cta">
+                     <i class="bi bi-cart"></i>
+                     <span class="noti_label w-4 h-4 inline-block rounded-full text-white text-[10px] leading-normal text-center bg-blue-500 -translate-y-3 -translate-x-4 transition">1</span>
+                  </div>
+               </div>
+            </div>
+            <div class="center justify-between text-gray-800">
+               <div>
+                  <i class="bi bi-list text-black cursor-pointer"></i>
+                  <select name="display_price" id="display_price" class="p-2 px-3 text-sm cursor-pointer border-t border-transparent hover:border-blue-500 hover:text-blue-500 transition">
+                     <option value="usd">Categories</option>
+                  </select>
+               </div>
+               <div class="center gap-1">
+                  <select name="display_price" id="display_price" class="p-2 px-3 text-sm cursor-pointer border-t border-transparent hover:border-blue-500 hover:text-blue-500 transition">
+                     <option value="home">Home</option>
+                  </select>
+                  <select name="display_price" id="display_price" class="p-2 px-3 text-sm cursor-pointer border-t border-transparent hover:border-blue-500 hover:text-blue-500 transition">
+                     <option value="shop">Shop</option>
+                  </select>
+                  <select name="display_price" id="display_price" class="p-2 px-3 text-sm cursor-pointer border-t border-transparent hover:border-blue-500 hover:text-blue-500 transition">
+                     <option value="products">Products</option>
+                  </select>
+                  <select name="display_price" id="display_price" class="p-2 px-3 text-sm cursor-pointer border-t border-transparent hover:border-blue-500 hover:text-blue-500 transition">
+                     <option value="pages">Pages</option>
+                  </select>
+                  <select name="display_price" id="display_price" class="p-2 px-3 text-sm cursor-pointer border-t border-transparent hover:border-blue-500 hover:text-blue-500 transition">
+                     <option value="blog">Blog</option>
+                  </select>
+               </div>
+            </div>
+         </header>
+      </div>
+
+      <section class="banner min-h-[90vh]">
+         
+      </section>
+
+      <script type="module" src="/main.js"></script>
+   </body>
+</html>
